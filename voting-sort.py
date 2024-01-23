@@ -46,6 +46,6 @@ for x in os.listdir('data'):
      df2 = df.assign(green=(df['賴清德']/ df['有效票數']))
      print('each city 99 ', x)
 
-     print(df2.sort_values(['green'],ascending=False).head(10) )
-
+     #print(df2.sort_values(['green'],ascending=False).head(10) )
+     print(df2.sort_values(['green'],ascending=False)[['鄉鎮','村里', '投票所編號', '賴清德', 'green']])
 
